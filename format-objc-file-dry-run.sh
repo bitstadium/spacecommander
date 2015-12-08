@@ -17,7 +17,7 @@ cat "$1" | \
 python "$DIR"/custom/LiteralSymbolSpacer.py | \
 python "$DIR"/custom/InlineConstructorOnSingleLine.py | \
 python "$DIR"/custom/MacroSemicolonAppender.py | \
-python "$DIR"/custom/DoubleNewlineInserter.py | \
+#python "$DIR"/custom/DoubleNewlineInserter.py | \
 "$DIR"/bin/clang-format-3.7 -style=file | \
 python "$DIR"/custom/HasIncludeSpaceRemover.py | \
 python "$DIR"/custom/NewLineAtEndOfFileInserter.py
